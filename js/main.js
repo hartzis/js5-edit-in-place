@@ -11,13 +11,16 @@ var $inputTxt = $('<input>', {
 var inputSwitch = function(element) {
     if ($(element).attr('id') === 'user-input') {
         $(element).parent().children('.editable').text($(element).val());
+        $(element).parent().children('.editable').css('display', 'block');
+        $(element).css('display', 'none');
 
     } else {
         console.log($(element).parent());
         console.dir($(element).parent());
         $inputTxt.val($(element).text());
         $(element).parent().append(($inputTxt));
-        // $(element).css('display', 'none');
+        $inputTxt.css('display', 'inline-block');
+        $(element).css('display', 'none');
         $inputTxt.focus();
     }
 }
@@ -27,6 +30,6 @@ $('.editable').on('click', function() {
 });
 
 $inputTxt.focusout(function() {
-    // inputSwitch(this);
-    $(this).parent().children('.editable').text($(this).val());
+    inputSwitch(this);
+    // $(this).parent().children('.editable').text($(this).val());
 });

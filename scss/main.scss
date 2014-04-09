@@ -41,9 +41,10 @@ p {
   width: 100%;
 }
 .center-1-2 {
-  float: left;
-  width: 50%;
+  // float: left;
+  width: 150px;
   display: inline-block;
+  // border: 1px solid #FFF;
   &:first-child {
     text-align: right;
   }

@@ -15,8 +15,6 @@ var inputSwitch = function(element) {
         type: 'text',
         id: 'user-input'
     })
-    console.log($(element).parent());
-    console.dir($(element).parent());
     $inputTxt.val($(element).text());
     $(element).parent().append(($inputTxt));
     $(element).hide();

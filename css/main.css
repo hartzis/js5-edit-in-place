@@ -48,8 +48,7 @@ p {
 }
 
 .center-1-2 {
-  float: left;
-  width: 50%;
+  width: 150px;
   display: inline-block;
 }
 .center-1-2:first-child {

@@ -1,5 +1,13 @@
 $(document).on('ready', function() {
 
+
+
+    $('.editable').on('click', function() {
+        inputSwitch(this);
+    });
+
+
+
 });
 
 
@@ -23,7 +31,3 @@ var inputSwitch = function(element) {
         inputReSwitch(this);
     });
 }
-
-$('.editable').on('click', function() {
-    inputSwitch(this);
-});

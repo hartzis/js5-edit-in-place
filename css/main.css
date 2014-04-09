@@ -1,0 +1,57 @@
+*, *:before *:after {
+  box-sizing: border-box;
+}
+
+/*CLEARFIX HACK*/
+/*PREVENT ROWS FROM FLOWING INTO EACH OTHER*/
+.row:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.body {
+  width: 50%;
+  background-color: #ccc;
+  margin: 0 auto;
+}
+
+.row {
+  text-align: center;
+}
+
+/*FLOAT ALL OUR COLUMNS*/
+[class*='col-'] {
+  float: left;
+}
+
+span {
+  width: 50%;
+}
+
+p {
+  margin: 0;
+  padding: 5px;
+}
+
+.user-input {
+  width: 100%;
+}
+
+.col-1-1 {
+  width: 100%;
+}
+
+.center-1-2 {
+  width: 50%;
+  display: inline-block;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+  border: 3px solid #eee;
+}
+.container div {
+  padding: 5px;
+}

@@ -30,13 +30,18 @@ p {
   margin: 0;
   padding: 5px;
 }
+.editable {
+  border: 1px solid #22F;
+}
 #user-input {
   width: 100%;
+  padding: 5px;
 }
 .col-1-1 {
   width: 100%;
 }
 .center-1-2 {
+  float: left;
   width: 50%;
   display: inline-block;
   &:first-child {
@@ -46,7 +51,6 @@ p {
 .container {
   width: 75%;
   margin: 0 auto;
-  border: 3px solid #FFF;
   div {
     padding: 5px;
   }

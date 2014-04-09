@@ -34,7 +34,7 @@ p {
   padding: 5px;
 }
 
-.user-input {
+#user-input {
   width: 100%;
 }
 
@@ -45,6 +45,9 @@ p {
 .center-1-2 {
   width: 50%;
   display: inline-block;
+}
+.center-1-2:first-child {
+  text-align: right;
 }
 
 .container {

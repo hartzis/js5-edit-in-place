@@ -5,12 +5,14 @@ $(document).on('ready', function() {
         inputSwitch(this);
     });
 
+    //switch back to base text and copy new input val to it
     var inputReSwitch = function(element) {
         $(element).parent().children('.editable').text($(element).val());
         $(element).parent().children('.editable').show();
         $(element).remove();
     }
 
+    //initial switch to input, create it and populate with base text
     var inputSwitch = function(element) {
 
         var $inputTxt = $('<input>', {
